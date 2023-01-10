@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+html {
+  background-image: url("../img/tic-tac-bkgrnd.png");
+  background-size: cover;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  user-select: none;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+}
+#game-board {
+  background-color: #fbb21b;
+  border-radius: 3%;
+  box-shadow: 15px 15px 0px 14px#f79329;
+  margin-bottom: 50px;
+}
+
+div[id^="row-"] {
+  overflow: hidden;
+  clear: both;
+}
+
+div[id^="row-"] div {
+  box-sizing: border-box;
+  background-color: #fcc21b;
+  box-shadow: inset 10px 10px #f79329;
+  border: 10px solid #fbb21b;
+  border-radius: 10%;
+  width: 175px;
+  height: 175px;
+  float: left;
+  text-align: center;
+  font-size: 125px;
+}
+
+.scores {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.player-scores {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 60px;
+}
+#buttons {
+  align-content: center;
+}
+#new-game {
+  display: none;
+  background-color: green;
+  border: solid 2px green;
+  border-radius: 50%;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  width: 300px;
+  padding: 20px;
+  margin: 5px;
+}
+
+#keep-battling {
+  display: none;
+  background-color: yellow;
+  border: solid 2px yellow;
+  border-radius: 50%;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  width: 300px;
+  padding: 20px;
+  margin: 25px;
+}
+
+#new-players {
+  display: none;
+  background-color: red;
+  border: solid 2px red;
+  border-radius: 50%;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  width: 300px;
+  padding: 20px;
+  margin-top: 10px;
+}
